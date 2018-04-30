@@ -1,0 +1,28 @@
+#border1 {
+  border-style: solid;
+}
+
+#border2 {
+  border-style: solid;
+  border-width: thick;
+}
+
+#border3 {
+  border-style: solid;
+  border-width: thick;
+  border-color: blue;
+}
+
+#border4 {
+  border-style: solid;
+  border-width: thick;
+  border-color: blue;
+  border-radius: 2em;
+  /* border-radius: 20px; */
+  /* border-radius: 5%; */
+}
+
+#border5 {
+  outline: 5px dotted green;
+  border: 5px solid lightblue;
+}

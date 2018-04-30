@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+  <title>CSS Text Shadow</title>
+</head>
+<body>
+  <style>
+    .shadow1 {
+      text-shadow: 2px 2px 8px red;
+    }
+    
+    .shadow2 {
+      text-shadow: 2px 2px #e1e1e1;
+    }  
+
+    #one {
+      text-transform: uppercase;
+    }
+
+    #two {
+      font-variant: small-caps;
+    }
+
+    #fun {
+      font-family: 'Megrim', cursive;
+      color: #FFF;
+      background-color: #232323; /* We will look at background colors in the next module, so hang tight! */
+      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+      font-size: 20pt;
+      text-align: center; /* We will cover this in the positioning module! */
+    }
+  </style>
+
+  <h1>Text Shadow</h1>
+  <p>This is a normal p tag without any CSS attached to it.</p>
+  <p class="shadow1">This has a red shadow this is blurred.</p>
+  <p class="shadow2" id="one">This has the text-transform of all caps and has a shadow!</p>
+  <p class="shadow2" id="two">This has the font-variant of small-caps and has a shadow!</p>
+
+  <h3>Let's try something fun!  Look at this and see if you can understand all that's happening!</h3>
+  <div id="fun">
+    <p>This is awesome!</p>
+  </div>
+</body>
+</html>
