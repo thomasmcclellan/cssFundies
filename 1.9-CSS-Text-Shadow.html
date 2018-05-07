@@ -9,20 +9,21 @@
 </head>
 <body>
   <style>
+    p {
+      text-transform: capitalize;
+    }
+
     .shadow1 {
       text-shadow: 2px 2px 8px red;
     }
     
     .shadow2 {
       text-shadow: 2px 2px #e1e1e1;
+      text-transform: uppercase;
     }  
 
-    #one {
-      text-transform: uppercase;
-    }
-
-    #two {
-      font-variant: small-caps;
+    #shadow {
+      text-transform: lowercase;
     }
 
     #fun {
@@ -38,10 +39,9 @@
   <h1>Text Shadow</h1>
   <p>This is a normal p tag without any CSS attached to it.</p>
   <p class="shadow1">This has a red shadow this is blurred.</p>
-  <p class="shadow2" id="one">This has the text-transform of all caps and has a shadow!</p>
-  <p class="shadow2" id="two">This has the font-variant of small-caps and has a shadow!</p>
+  <p class="shadow2">This has the text-transform of all caps and has a shadow!</p>
+  <p class="shadow2" id="shadow">This has the text-transform of all <b>lowercase</b> and has a shadow!</p>
 
-  <h3>Let's try something fun!  Look at this and see if you can understand all that's happening!</h3>
   <div id="fun">
     <p>This is awesome!</p>
   </div>
