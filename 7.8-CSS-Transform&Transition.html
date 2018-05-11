@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transform & Transition</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: grey;
+      }
+      .stretch {
+        background: url("https://images.unsplash.com/photo-1511547876233-3710a28eb30a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=22f767f18b0b0f11a5a1b6f3926cbcd3&auto=format&fit=crop&w=1000&q=80") center center;
+        border: inset;
+        width: 10em;
+        height: 30em;
+        margin: auto;
+        margin-top: 10em;
+        transition: width 3s ease-in-out;
+      }
+
+      .stretch:hover {
+        cursor: pointer;
+        width: 50em;
+      }
+
+      .rotate {
+        background: url("https://images.unsplash.com/photo-1476937619554-0f08b179a10c?ixlib=rb-0.3.5&s=84a64edb88d90f16c85237e9d4494c75&auto=format&fit=crop&w=1974&q=80") center center;
+        border-radius: 100%;
+        width: 35em;
+        height: 35em;
+        margin: auto;
+        margin-top: 10em;
+        margin-bottom: 10em;
+        transition: transform 5s ease-in;
+      }
+      
+      .rotate:hover {
+        transform: rotate(1080deg);
+        cursor: pointer;
+      }
+    </style>
+    <div class="stretch"></div>
+    <div class="rotate"></div>
+  </body>
+</html>

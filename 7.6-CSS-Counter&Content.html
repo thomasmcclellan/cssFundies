@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Counter & Content</title>
+</head>
+<body>
+  <style>
+    body {
+      counter-reset: my-sec-counter;
+    }  
+
+    h2::before {
+      counter-increment: my-sec-counter;
+      content: "Episode " counter(my-sec-counter) ": ";
+    }
+  </style>
+  <h1>Parks and Recreation, Season 1:</h1>
+  <h2>Pilot</h2>
+  <h2>Canvassing</h2>
+  <h2>The Reporter</h2>
+  <h2>Boy's Club</h2>
+  <h2>The Banquet</h2>
+  <h2>Rock Show</h2>
+</body>
+</html>
